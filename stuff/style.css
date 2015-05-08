@@ -4,7 +4,8 @@ body {
 	line-height: 1.5em;
 	padding: 6% 2% 0;
 	color: #fff;
-	background: #000;
+	background: url(/img/bg.png) no-repeat;
+	background-size: cover;
 }
 
 video {
