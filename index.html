@@ -3,77 +3,77 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charset="utf-8">
-			
+
 		<meta property="og:title" content="Контадор">
-		<meta property="og:type" content="video.movie">		
+		<meta property="og:type" content="video.movie">
 		<meta property="og:url" content="http://vanyaklimenko.ru/kontador/">
-		<meta property="og:description" content="Велотрекер с маршрутами по Сургуту.">		
-		<meta property="og:image" content="img/og.png">	
+		<meta property="og:description" content="Велотрекер с маршрутами по Сургуту.">
+		<meta property="og:image" content="img/og.png">
 		<meta name="viewport" content="ya-title=fade,ya-dock=fade">
-		
+
 		<title>Контадор</title>
-		<link rel="stylesheet" href="stuff/likely.css" />			
-		<link rel="stylesheet" href="stuff/style.css" />	
+		<link rel="stylesheet" href="stuff/likely.css" />
+		<link rel="stylesheet" href="stuff/style.css" />
 	</head>
 	<body class="emerge" data-spin="true" data-spin-size="100" data-hold="1000">
-	
-		<video class="emerge" width="320" height="240" autoplay loop>
+
+		<video class="emerge" width="320" height="240" autoplay loop muted>
   			<source src="/img/bg.mp4" type="video/mp4">
 		</video>
-	
-		<div id="logo" class="emerge" data-effect="slide" data-hold="2000" data-duration="500"><img src="img/Question.svg"></div>		
-		
+
+		<div id="logo" class="emerge" data-effect="slide" data-hold="2000" data-duration="500"><img src="img/Question.svg"></div>
+
 		<div id="content" class="emerge" data-effect="screw" data-hold="3000" data-duration="1000">
 			<section>
 				<p>В июне мы покажем миру Контадор, первый велотрекер для Айфона с маршрутами, и вы узнаете, где.</p>
 				<div class="likely likely-light likely-big emerge" data-effect="relax" data-hold="4500" data-duration="1000">
-					<div class="vkontakte">Рассказать друзьям</div>		
+					<div class="vkontakte">Рассказать друзьям</div>
 					<div class="likely__widget likely__widget_vkontakte">
 						<a href="http://vk.com/kontadorapp" class="likely__button likely__button_vkontakte">Узнать о запуске первым</a>
-					</div>		
+					</div>
 				</div>
 			</section>
-			
+
 			<section class="emerge" data-effect="relax" data-hold="4500" data-duration="1000">
 				<h1>Почему мы лучше всех</h1>
 				<p>Контадор знает город и к тому же не отвлекает от дороги сложным интерфейсом.</p>
-				
+
 				<h1>Качество</h1>
 				<p>Каждый маршрут проверен нами лично, при том не раз. Мы не верим в коллективный разум. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
-				
+
 				<h1>Андроид</h1>
-				<p>А также Виндоус-фон — когда-нибудь в следующей жизни.</p>									
+				<p>А также Виндоус-фон — когда-нибудь в следующей жизни.</p>
 			</section>
 		</div>
-	
-		    
+
+
 	</body>
-	
+
 	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
-	<script src="stuff/emerge.js" charset="utf-8"></script>		
+	<script src="stuff/emerge.js" charset="utf-8"></script>
 	<script src="stuff/likely.js" charset="utf-8"></script>
 	<script>
 		$(document).ready(function (){
 			function adaptLikely(kek) {
-				if (kek < 540) {	
+				if (kek < 540) {
 					$('.likely').removeClass('likely-big');
 				}
-				
-				if (kek > 540) {	
+
+				if (kek > 540) {
 					$('.likely').addClass('likely-big');
 				}
-			}	
-			
+			}
+
 			$(window).resize(function(){
 				var kek = $(window).width();
 				console.log('kek = ' + kek);
 				adaptLikely(kek);
 			});
-			
+
 			adaptLikely($(window).width());
-			
+
 		});
-	
-		
-	</script>		
+
+
+	</script>
 </html>
