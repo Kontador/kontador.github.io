@@ -2,13 +2,13 @@ body {
 	font-family: Verdana, sans-serif;
 	font-size: 18px;
 	line-height: 1.5em;
-	padding: 10% 2% 0;
+	padding: 6% 2% 0;
 	color: #fff;
 	background: #000;
 }
 
 video {
-	-webkit-filter: blur(10px) brightness(70%);	
+	-webkit-filter: blur(10px) brightness(70%);
 	-moz-filter: blur(10px) brightness(70%);
 	-o-filter: blur(10px) brightness(70%);
 	-ms-filter: blur(10px) brightness(70%);
@@ -27,9 +27,8 @@ video {
 
 @media screen and (max-width: 520px) {
 	body {
-		padding-top: 6%;
 		font-size: 16px;
-		line-height: 1.5em;			
+		line-height: 1.5em;
 	}
 }
 
@@ -41,16 +40,21 @@ video {
 }
 
 section {
-	margin: 0 0 60px;
+	margin: 0 0 50px;
 }
 
 #content {
 	margin-left: 3%;
 }
 
-h1 {
+h1, h2 {
 	font-size: 100%;
 	margin: 0;
+}
+
+h1 {
+	margin: 0 0 10px;
+	font-style: italic;
 }
 
 p {
@@ -83,10 +87,10 @@ a {
 }
 
 .likely {
-	margin-left: -8px;	
+	margin-left: -8px;
 }
 
 * {
 	text-shadow: none !important;
-	transition: .1s;	
+	transition: .1s;
 }
