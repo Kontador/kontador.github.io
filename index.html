@@ -2,20 +2,64 @@
 <html lang="ru">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta charset="utf-8">
 
 		<meta property="og:title" content="Контадор">
-		<meta name="viewport" content="ya-title=fade,ya-dock=fade">
 
 		<title>Контадор</title>
 		<link rel="stylesheet" href="stuff/style.css" />
+
+		<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+
+    <script type="text/javascript">
+      VK.init({apiId: 4944374, onlyWidgets: true});
+    </script>
+		
 	</head>
 	<body>
 
 
-		<h1>Хотите чаю?</h1>
-		<p>Давайте отвлечёмся ненадолго.</p>
-
-
+		<h1 id="logo">— Когда вы уже выпустите Контадор?</h1>
+		<p>Отвечаем (на самом деле нет)</p>
+		<iframe
+		src="//coub.com/embed/6q1ia?muted=false&autostart=false&originalSize=false&noSiteButtons=true&hideTopBar=true&startWithHD=false"
+		allowfullscreen="true" frameborder="0" width="400" height="220">
+		</iframe>
+    
+    <div id="content">
+      <img src="img/iphone.png" class="kontador-demo">	
+      
+      <p><abbr>Седьмого июня</abbr> мы обещали выпустить Контадо́р, первый в мире велотрекер для айфона с качественными маршрутами, составленными вручную. Но планы изменились. Недавно мы с ужасом поняли, что катастрофически не успеваем.</p>
+      <p>Мы решили, что выпустим Контадор не позднее сентября. За это время, не скатившись в фичеризм, добавим маршруты для Москвы, Питера, Углича и Омска.</p>
+      
+      <br>
+      
+  		<h2>Почему мы лучше всех</h2>
+  		
+      <table width="100%"><tbody>
+        <tr valign="top">
+          <td width="33%">
+            <img src="img/route.svg" height="50px">
+            <b style="color: #4a90e2">Маршруты</b>
+            <p>Каждый маршрут мы лично проверили. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
+          </td>
+          <td width="33%">
+            <img src="img/medal.svg" height="50px">            
+            <b style="color: #ff0221;">Достижения</b>
+            <p>Чтобы мотивировать новичков и подбадривать уже искушённых.</p>
+          </td>                    
+          <td width="34%">
+            <img src="img/ok.svg" height="50px">
+            <b style="color: #72c21a">Интерфейс</b>
+            <p>В интерфейсе — только необходимое. Потому что мы тоже не любим отвлекаться от дороги.</p>
+          </td>
+        </tr>
+      </tbody></table>  
+      
+      <br>
+      
+      <div id="vk_like"></div>
+      <script type="text/javascript">
+        VK.Widgets.Like("vk_like", {type: "mini", height: 24});
+      </script>
 	</body>
 </html>

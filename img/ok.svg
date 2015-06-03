@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47px" height="40px" viewBox="0 0 47 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>ok</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ok" sketch:type="MSArtboardGroup">
+            <rect id="Rectangle-1" fill="#72C319" sketch:type="MSShapeGroup" x="0" y="23.029654" width="32.8093356" height="16.970346" rx="2"></rect>
+            <text id="ОК" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" letter-spacing="1.16666651" fill="#FFFFFF">
+                <tspan x="5.24900127" y="36.029654">ОК</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
