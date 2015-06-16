@@ -2,68 +2,77 @@
 <html lang="ru">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8">
 
 		<meta property="og:title" content="Контадор">
+		<meta property="og:type" content="video.movie">
+		<meta property="og:url" content="http://vanyaklimenko.ru/kontador/">
+		<meta property="og:description" content="Велотрекер с маршрутами по Сургуту.">
+		<meta property="og:image" content="img/og.png">
+		<meta name="viewport" content="ya-title=fade,ya-dock=fade">
 
 		<title>Контадор</title>
+		<link rel="stylesheet" href="stuff/likely.css" />
 		<link rel="stylesheet" href="stuff/style.css" />
-
-		<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-
-    <script type="text/javascript">
-      VK.init({apiId: 4944374, onlyWidgets: true});
-    </script>
-		
 	</head>
-	<body>
+	<body class="emerge" data-spin="true" data-spin-size="100" data-hold="1000">
+
+		<video class="emerge" width="320" height="240" autoplay loop muted>
+  			<source src="/img/bg.mp4" type="video/mp4">
+		</video>
+
+		<div id="logo" class="emerge" data-effect="slide" data-hold="2000" data-duration="500"><img src="img/Question.svg"></div>
+
+		<div id="content" class="emerge" data-effect="screw" data-hold="3000" data-duration="1000">
+			<section>
+				<p>Седьмого июня мы покажем миру Контадо́р, первый велотрекер для Айфона с маршрутами, и вы узнаете, где.</p>
+				<div class="likely likely-light likely-big emerge" data-effect="relax" data-hold="4500" data-duration="1000">
+					<div class="vkontakte">Рассказать друзьям</div>
+				</div>
+			</section>
+
+			<section class="emerge" data-effect="relax" data-hold="4500" data-duration="1000">
+				<h1>Почему Контадор лучше всех</h1>
+
+				<h2>Интерфейс</h2>
+				<p>В интерфейсе — только необходимое. Потому что мы тоже не любим отвлекаться от дороги.</p>
+
+				<h2>Качество</h2>
+				<p>Каждый маршрут мы лично проверили, притом не раз. Мы верим в победу качества над количеством. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
+
+				<h2>Андроид и другие города</h2>
+				<p>В следующей жизни.</p>
+			</section>
+		</div>
 
 
-		<h1 id="logo">— Когда вы уже выпустите Контадор?</h1>
-		<p>Отвечаем (на самом деле нет)</p>
-		<iframe
-		src="//coub.com/embed/6q1ia?muted=false&autostart=false&originalSize=false&noSiteButtons=true&hideTopBar=true&startWithHD=false"
-		allowfullscreen="true" frameborder="0" width="400" height="220">
-		</iframe>
-    
-    <div id="content">
-      <img src="img/iphone.png" class="kontador-demo">	
-      
-      <p><abbr>Седьмого июня</abbr> мы обещали выпустить Контадо́р, первый в мире велотрекер для айфона с качественными маршрутами, составленными вручную. Но планы изменились. Недавно мы с ужасом поняли, что катастрофически не успеваем.</p>
-      <p>Мы решили, что выпустим Контадор не позднее сентября. За это время, не скатившись в фичеризм, добавим маршруты для Москвы, Питера, Углича и Омска.</p>
-      
-      <br>
-      
-  		<h2>Почему мы лучше всех</h2>
-  		
-      <table width="100%"><tbody>
-        <tr valign="top">
-          <td width="33%">
-            <img src="img/route.svg" height="50px">
-            <b style="color: #4a90e2">Маршруты</b>
-            <p>Каждый маршрут мы лично проверили. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
-          </td>
-          <td width="33%">
-            <img src="img/medal.svg" height="50px">            
-            <b style="color: #ff0221;">Достижения</b>
-            <p>Чтобы мотивировать новичков и подбадривать уже искушённых.</p>
-          </td>                    
-          <td width="34%">
-            <img src="img/ok.svg" height="50px">
-            <b style="color: #72c21a">Интерфейс</b>
-            <p>В интерфейсе — только необходимое. Потому что мы тоже не любим отвлекаться от дороги.</p>
-          </td>
-        </tr>
-      </tbody></table>  
-      
-      <br>
-      
-      <h2>Расскажите друзьям</h2>
-      
-      <div id="vk_like"></div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Контадор — первый велотрекер для Айфона с машрутами и достижениями" data-lang="ru" data-size="large" data-count="none">Твитнуть</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      
-      <script type="text/javascript">
-        VK.Widgets.Like("vk_like", {type: "mini", height: 24});
-      </script>
 	</body>
+
+	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+	<script src="stuff/emerge.js" charset="utf-8"></script>
+	<script src="stuff/likely.js" charset="utf-8"></script>
+	<script>
+		$(document).ready(function (){
+			function adaptLikely(kek) {
+				if (kek < 540) {
+					$('.likely').removeClass('likely-big');
+				}
+
+				if (kek > 540) {
+					$('.likely').addClass('likely-big');
+				}
+			}
+
+			$(window).resize(function(){
+				var kek = $(window).width();
+				console.log('kek = ' + kek);
+				adaptLikely(kek);
+			});
+
+			adaptLikely($(window).width());
+
+		});
+
+
+	</script>
 </html>
