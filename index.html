@@ -17,31 +17,38 @@
 	</head>
 	<body class="emerge" data-spin="true" data-spin-size="100" data-hold="1000">
 
-		<video class="emerge" width="320" height="240" autoplay loop muted>
+		<video width="320" height="240" autoplay loop muted>
   			<source src="/img/bg.mp4" type="video/mp4">
-		</video>
+		</video>			
 
-		<div id="logo" class="emerge" data-effect="slide" data-hold="2000" data-duration="500"><img src="img/Question.svg"></div>
-
-		<div id="content" class="emerge" data-effect="screw" data-hold="3000" data-duration="1000">
-			<section>
-				<p>Седьмого июня мы покажем миру Контадо́р, первый велотрекер для Айфона с маршрутами, и вы узнаете, где.</p>
-				<div class="likely likely-light likely-big emerge" data-effect="relax" data-hold="4500" data-duration="1000">
+		<div id="content">
+			<section class="white">
+				<h1>Контадор</h1>
+				<p>Первый велотрекер для Айфона<br/>с маршрутами по Сургуту</p>
+			</section>
+			
+			<section id="see">
+				<figure class="iphone">
+					<figure class="shot"></figure>
+				</figure>
+			</section>
+			
+			<section id="text">
+				<h2>Проблема</h2>
+				<p>Cургутяне открывают для себя велоспорт. Притом они катаются вдоль загруженных, загазованных и шумных дорог, подвергая опасности здоровье и создавая аварийные ситуации. Контадор знает, где безопасно, и предлагает маршруты, не раз проверенные и интересные.</p>
+	
+				<h2>Дизайн</h2>
+				<p>Кроме маршрутов, Контадор считает пройденное расстояние, засекает время и сохраняет результаты. Пользователи делятся ими с друзьями в соц. сетях. Контадор не засоряет экран ненужной информацией, графиками и пиктограммами: мы тоже не любим отвлекаться от дороги.</p>
+				<h2>Качество</h2>
+				<p>Верим в победу качества над количеством. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
+				
+				<div class="likely likely-light likely-big">
 					<div class="vkontakte">Рассказать друзьям</div>
 				</div>
-			</section>
-
-			<section class="emerge" data-effect="relax" data-hold="4500" data-duration="1000">
-				<h1>Почему Контадор лучше всех</h1>
-
-				<h2>Интерфейс</h2>
-				<p>В интерфейсе — только необходимое. Потому что мы тоже не любим отвлекаться от дороги.</p>
-
-				<h2>Качество</h2>
-				<p>Каждый маршрут мы лично проверили, притом не раз. Мы верим в победу качества над количеством. Выбираем только те маршруты, которые любим и считаем хорошими.</p>
-
-				<h2>Андроид и другие города</h2>
-				<p>В следующей жизни.</p>
+				
+				<br/><br/>
+				
+				<p><small>© 2015 И. Клименко, Ф. Романов</small></p>
 			</section>
 		</div>
 
@@ -51,28 +58,4 @@
 	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
 	<script src="stuff/emerge.js" charset="utf-8"></script>
 	<script src="stuff/likely.js" charset="utf-8"></script>
-	<script>
-		$(document).ready(function (){
-			function adaptLikely(kek) {
-				if (kek < 540) {
-					$('.likely').removeClass('likely-big');
-				}
-
-				if (kek > 540) {
-					$('.likely').addClass('likely-big');
-				}
-			}
-
-			$(window).resize(function(){
-				var kek = $(window).width();
-				console.log('kek = ' + kek);
-				adaptLikely(kek);
-			});
-
-			adaptLikely($(window).width());
-
-		});
-
-
-	</script>
 </html>

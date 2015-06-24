@@ -1,19 +1,30 @@
+@-webkit-keyframes flash {
+	0%, 100% {
+		background: rgba(50, 125, 200, .2); 
+	}
+	
+	50% {
+		background: rgba(50, 125, 200, .6);
+		color: #fff;
+	}
+}
+
 body {
-	font-family: Verdana, sans-serif;
-	font-size: 18px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 17px;
 	line-height: 1.5em;
-	padding: 6% 2% 0;
+	padding: 0;
 	margin: 0;
-	color: #fff;
-	background: #000;
+	color: #000;
+	background: #fff;
 }
 
 video {
-	-webkit-filter: blur(10px) brightness(70%);
-	-moz-filter: blur(10px) brightness(70%);
-	-o-filter: blur(10px) brightness(70%);
-	-ms-filter: blur(10px) brightness(70%);
-	filter: blur(10px), brightness(70%);
+	-webkit-filter: blur(10px) brightness(.4);
+	-moz-filter: blur(10px) brightness(.4);
+	-o-filter: blur(10px) brightness(.4);
+	-ms-filter: blur(10px) brightness(.4);
+	filter: blur(10px) brightness(.4);
 	position: fixed;
 	right: -5%;
 	bottom: -5%;
@@ -24,28 +35,31 @@ video {
 	z-index: -100;
 	background: url(/img/bg.png) no-repeat;
 	background-size: cover;
+}	
+
+section {
+	margin: 25px 0;
+	padding-left: 5%;
 }
 
-@media screen and (max-width: 520px) {
-	body {
-		font-size: 16px;
-		line-height: 1.5em;
-	}
-}
-
-#logo img {
-	max-height: 68px;
-	max-width: 99%;
-	padding: 0;
+.white {
+	color: #fff;
+	text-align: center;
+	padding: 25px;
 	margin: 0;
 }
 
-section {
-	margin: 0 0 50px;
+#see {
+	height: 800px;
+	z-index: -1;
 }
 
-#content {
-	margin-left: 3%;
+#text {
+	margin: 0;
+	padding: 2% 5%;
+	background: #fff url(/img/route.png) no-repeat;
+	background-position: top right;
+	background-size: 20%;
 }
 
 h1, h2 {
@@ -55,16 +69,44 @@ h1, h2 {
 
 h1 {
 	margin: 0 0 10px;
-	font-style: italic;
+	font-weight: 300;
+	font-size: 42px;
+	line-height: 1em;
 }
 
-p {
-	max-width: 800px;
-	margin: 0 0 1.3em;
+#text p {
+	max-width: 640px;
+	margin: 0 0 1.5em;
 }
 
 a {
-	color: #fff;
+	color: #000;
+}
+
+.iphone {
+	background: url(/img/iphone.png) no-repeat;
+	width: 381px;
+	height: 759px;
+	margin: 0;
+	padding: 0;
+	left: 50%;
+	top: 50px;
+    transform: translate(-50%, 0);
+	position: fixed;
+	z-index: -2;
+}
+
+.shot {
+	background: url(/img/ss.png) no-repeat;
+	background-size: 100%;
+	width: 320px;
+	height: 569px;
+	position: relative;
+	top: 94px;
+	left: 31px;
+	margin: 0;
+	z-index: -1;
+	padding: 0;
 }
 
 .likely__icon {
@@ -80,11 +122,13 @@ a {
 }
 
 .likely-light .likely__widget_vkontakte:hover, .likely-light .likely__widget_vkontakte:active, .likely-light .likely__widget_vkontakte:focus {
-	background: rgba(255, 255, 255, .2);
+	background: rgba(0, 0, 0, .4);
 }
 
 .likely__widget {
-	font-family: Verdana;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	-webkit-animation: flash 3s infinite;
 }
 
 .likely {
@@ -94,4 +138,33 @@ a {
 * {
 	text-shadow: none !important;
 	transition: .1s;
+}
+
+@media screen and (max-width: 520px) {
+	body {
+		font-size: 15px;
+		line-height: 1.5em;
+	}
+	
+	section {
+		padding-left: 5%;
+	}
+	
+	.iphone {
+		margin: 0;
+		padding: 0;
+		width: 320px;
+		height: 169px;
+		background: 0;
+	}
+	
+	.shot {
+		left: 0;
+		top: 90px;
+		background-size: 95%;
+	}
+	
+	#text {
+		background: #fff;
+	}
 }
