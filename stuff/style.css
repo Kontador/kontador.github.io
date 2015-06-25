@@ -75,6 +75,7 @@ h1 {
 }
 
 #text p {
+	width: 95%;
 	max-width: 640px;
 	margin: 0 0 1.5em;
 }
@@ -163,11 +164,12 @@ a {
 	
 	.shot {
 		left: 0;
-		top: 0;
+		top: 90px;
 		background-size: 100%;
 	}
 	
 	#text {
 		background: #fff;
+		padding: 3% 5%;
 	}
 }
