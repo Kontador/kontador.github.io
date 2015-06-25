@@ -10,7 +10,7 @@
 }
 
 body {
-	font-family: cursive, sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 17px;
 	line-height: 1.5em;
 	padding: 0;
@@ -163,8 +163,8 @@ a {
 	
 	.shot {
 		left: 0;
-		top: 90px;
-		background-size: 95%;
+		top: 0;
+		background-size: 100%;
 	}
 	
 	#text {
